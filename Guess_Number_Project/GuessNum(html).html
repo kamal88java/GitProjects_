@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meat name="viewport" content="width=device-width" initial-scale="1.0" />
+    <!--Useragent compatibility with internet browser of latest(edge)-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="GuessNum(css).css" />
+    <title>Guess My Number!</title>
+  </head>
+  <body>
+    <header>
+      <h1>Guess My Number!</h1>
+      <!-- class tags specifications for CSS purpose-->
+      <!-- CSS classes are= .between .again .number .btn -->
+      <h1 class="between">(Between 1 to 20)</h1>
+      <button class="btn again">Again!</button>
+      <div class="number">?</div>
+    </header>
+    <main>
+      <!-- CSS classes are= .left .check  .btn -->
+      <section class="left">
+        <input type="number" class="guess" />
+        <button class="btn check">Check!</button>
+      </section>
+      <!-- CSS classes are= .right .message .label-score -->
+      <section class="right">
+        <p class="message">Start Guessing...</p>
+        <!--Score key gets a diff style, score value gets a diff style-->
+        <p class="label-score">💯 Score:<span class="score">20</span></p>
+        <p class="label-highscore">
+          🥇 Highscore:<span class="highscore">0</span>
+        </p>
+      </section>
+    </main>
+    <script src="GuessNum(js).js"></script>
+  </body>
+</html>
